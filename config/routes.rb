@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # Some Rails shortcuts
+  #  Full command     Shortcut
+  # $ rails server    $ rails s
+  # $ rails console   $ rails c
+  # $ rails generate  $ rails g
+  # $ rails test      $ rails t
+  # $ bundle install  $ bundle
+  get 'static_pages/home'
+  get 'static_pages/help'
   root "application#hello"
 end
