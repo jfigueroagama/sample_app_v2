@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   # $ rails generate  $ rails g
   # $ rails test      $ rails t
   # $ bundle install  $ bundle
+  root 'static_pages#home'
   get 'static_pages/home'
   get 'static_pages/help'
-  root "application#hello"
+  get 'static_pages/about'
 end
